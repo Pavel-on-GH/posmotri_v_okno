@@ -53,7 +53,7 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 711px 399px;
+  grid-template-columns: 711px 1fr;
   column-gap: 30px;
   align-content: center;
 }
