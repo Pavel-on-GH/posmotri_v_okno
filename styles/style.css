@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
 }
 
 h1,
@@ -35,14 +37,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-/* Мой код */
-
-/* Код к уже измененным местам */
-.page {
-  display: flex;
-  justify-content: center;
 }
 
 /*  */
@@ -72,13 +66,10 @@ ol {
 }
 
 .result__video {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  /* height: 100%; */
 }
 
-/* SEARCH */
+/* search */
 
 .search-form {
   display: flex;
@@ -132,6 +123,19 @@ ol {
   margin-top: 5px;
 }
 
+.search-form__label:focus {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__label:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:focus {
+  outline: 1px solid #fff;
+}
+
 .search-form__pseudo-checkbox {
   display: inline-block;
   width: 19px;
@@ -149,21 +153,12 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label:focus {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
-.search-form__label:hover {
-  text-decoration: underline;
-}
-
 .search-form__submit-button {
   width: 194px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
-/* CONTENT */
+/* content__details */
 
 .title {
   font-family: Oswald;
@@ -214,9 +209,8 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 200px;
-  /* Заметка - завтра поправить так, чтобы он занял всё свободное пространство, не занятое картинкой
-  мб, через absolute */
+  min-width: 206px;
+  overflow: hidden;
 }
 
 .content__video-card {
@@ -247,6 +241,8 @@ ol {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* button */
 
 .button {
   background-color: #1b1919;
